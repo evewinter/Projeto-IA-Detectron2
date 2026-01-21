@@ -13,7 +13,7 @@ O objetivo principal é o desenvolvimento de um sistema de detecção automátic
 
 - Aquisição de Dados: Fotos tiradas com o celular.
 
-- Volume de Dados: 35 imagens rotuladas manualmente.
+- Volume de Dados: 32 imagens rotuladas manualmente.
 
 
 
