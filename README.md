@@ -1,4 +1,4 @@
-##Detecção Automática de Pessoas em Ambientes Universitários
+## Detecção Automática de Pessoas em Ambientes Universitários
 
 Este projeto aplica técnicas de Inteligência Artificial utilizando Redes Neurais Convolucionais (CNN) para identificar a presença de pessoas em ambientes reais do Campus da UFC. O sistema foi desenvolvido como parte da disciplina de Inteligência Artificial 2025.2.
 
@@ -6,30 +6,31 @@ Este projeto aplica técnicas de Inteligência Artificial utilizando Redes Neura
 ![WhatsApp Image 2026-01-21 at 15 02 17 (1)](https://github.com/user-attachments/assets/57a9e071-5b18-469f-a41f-caca2130652f)
 
 
-##📌 Descrição do Projeto
+## 📌 Descrição do Projeto
 O objetivo principal é o desenvolvimento de um sistema de detecção automática com foco em aplicações de monitoramento e análise de ocupação de espaços. Utilizamos a técnica de Fine-Tuning em um modelo pré-treinado do framework Detectron2.
 
-Cenário Escolhido: Biblioteca do Campus.
+- Cenário Escolhido: Biblioteca do Campus.
 
-Aquisição de Dados: Fotos tiradas com o celular.
+- Aquisição de Dados: Fotos tiradas com o celular.
 
-Volume de Dados: 35 imagens rotuladas manualmente.
-
-
-##🛠️ Tecnologias e Ferramentas
-Linguagem: Python 3.11
-
-Framework Principal: Detectron2 (Facebook AI Research)
-
-Bibliotecas Auxiliares: PyTorch, OpenCV, NumPy
-
-Rotulagem: Roboflow (formato COCO-like)
-
-Ambiente de Execução: Google Colab (GPU T4)
+- Volume de Dados: 35 imagens rotuladas manualmente.
 
 
-##📂 Estrutura do Repositório
-Plaintext
+
+## 🛠️ Tecnologias e Ferramentas
+- Linguagem: Python 3.11
+
+- Framework Principal: Detectron2 (Facebook AI Research)
+
+- Bibliotecas Auxiliares: PyTorch, OpenCV, NumPy
+
+- Rotulagem: Roboflow (formato COCO-like)
+
+- Ambiente de Execução: Google Colab (GPU T4)
+
+
+
+## 📂 Estrutura do Repositório
 
 projeto-deteccao-pessoas/
 
@@ -62,7 +63,8 @@ projeto-deteccao-pessoas/
 └── README.md
 
 
-##🚀 Como Executar
+
+## 🚀 Como Executar
 1. Preparação do Ambiente
 Recomendamos o uso do Google Colab pela exigência do GPU. Instale as dependências necessárias:
 
@@ -87,27 +89,27 @@ python inference/test_model.py
 Após o treino, o modelo final (model_final.pth) será salvo na pasta output.
 
 
-##📊 Resultados e Avaliação
+## 📊 Resultados e Avaliação
 
-###Configurações do Modelo
+### Configurações do Modelo
 
--Modelo Base: COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml.
+- Modelo Base: COCO-Detection/faster_rcnn_R_50_FPN_3x.yaml.
 
--Iterações: 800.
+- Iterações: 800.
 
--Batch Size: 2.
+- Batch Size: 2.
 
--Taxa de Aprendizado (Base LR): 0.00025.
+- Taxa de Aprendizado (Base LR): 0.00025.
 
-###Métricas de Desempenho
+### Métricas de Desempenho
 
 Os resultados obtidos após o processo de fine-tuning foram:
 
--mAP (mean Average Precision): 0.527
+- mAP (mean Average Precision): 0.527
 
--Precision: 1.000
+- Precision: 1.000
 
--Recall: 0,640
+- Recall: 0,640
 
  ![WhatsApp Image 2026-01-21 at 15 02 18](https://github.com/user-attachments/assets/fea4d7a5-8459-434c-8e4b-65eec32bd2d8)
 
@@ -118,7 +120,7 @@ Os resultados obtidos após o processo de fine-tuning foram:
  ![WhatsApp Image 2026-01-21 at 15 02 16](https://github.com/user-attachments/assets/5bb86b1b-4ff9-4ad4-ae5b-441d853cb326)
 
 
-##⚠️ Aplicação em Segurança da Informação
+## ⚠️ Aplicação em Segurança da Informação
 A detecção automática de pessoas é um componente crítico para a Segurança Física de Instalações, que é um dos domínios da Segurança da Informação. As aplicações práticas deste projeto incluem:
 
 Controle de Acesso e Intrusão: O sistema pode ser integrado a câmeras de CFTV para alertar automaticamente a presença de pessoas em áreas restritas (como servidores ou laboratórios de pesquisa) fora do horário permitido.
